@@ -6,10 +6,6 @@ import (
 	"math/big"
 )
 
-const (
-	modLen = 20
-)
-
 // Generate returns a prime of bits length and panics on error.
 func Generate(bits int) *big.Int {
 	p, err := rand.Prime(rand.Reader, bits+1)
